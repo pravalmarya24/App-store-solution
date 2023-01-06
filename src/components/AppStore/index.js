@@ -343,15 +343,16 @@ class AppStore extends Component {
         </ul>
         <ul className="unordered-appsList-container">
           {searchFilteredResult.map(eachAppList => (
-            <li className="app-list-item" key={eachAppList.appId}>
-              <div className="mini-card-container">
-                <img
-                  src={eachAppList.imageUrl}
-                  alt={eachAppList.appName}
-                  className="app-img-size"
-                />
-                <p className="app-para">{eachAppList.appName}</p>
-              </div>
+            <li
+              className="app-list-item mini-card-container"
+              key={eachAppList.appId}
+            >
+              <img
+                src={eachAppList.imageUrl}
+                alt={eachAppList.appName}
+                className="app-img-size"
+              />
+              <p className="app-para">{eachAppList.appName}</p>
             </li>
           ))}
         </ul>
